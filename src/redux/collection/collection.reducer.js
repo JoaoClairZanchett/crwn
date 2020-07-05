@@ -1,6 +1,5 @@
 const INITIAL_STATE = {
-  collections: [
-    {
+    hats: {
       id: 1,
       title: "Hats",
       routeName: "hats",
@@ -61,7 +60,7 @@ const INITIAL_STATE = {
         },
       ],
     },
-    {
+    sneakers: {
       id: 2,
       title: "Sneakers",
       routeName: "sneakers",
@@ -116,7 +115,7 @@ const INITIAL_STATE = {
         },
       ],
     },
-    {
+    jackets: {
       id: 3,
       title: "Jackets",
       routeName: "jackets",
@@ -153,10 +152,10 @@ const INITIAL_STATE = {
         },
       ],
     },
-    {
+    women: {
       id: 4,
-      title: "Womens",
-      routeName: "womens",
+      title: "Women",
+      routeName: "women",
       items: [
         {
           id: 23,
@@ -202,10 +201,10 @@ const INITIAL_STATE = {
         },
       ],
     },
-    {
+    men: {
       id: 5,
-      title: "Mens",
-      routeName: "mens",
+      title: "Men",
+      routeName: "men",
       items: [
         {
           id: 30,
@@ -245,7 +244,6 @@ const INITIAL_STATE = {
         },
       ],
     },
-  ],
 };
 
 const collectionReducer = (state = INITIAL_STATE, action) => {
